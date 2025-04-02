@@ -154,7 +154,7 @@ const MainLayout = ({ children }) => {
               </h3>
               <ul>
                 <li>📞 +91 7742965799</li>
-                <li> ✉️ umeshchoudharywork@gmail.com</li>
+                <li> ✉️ umeshchoudhary.dev@gmail.com</li>
                 <li>📍 Bangalore, India</li>
               </ul>
             </div>

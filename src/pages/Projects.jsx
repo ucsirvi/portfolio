@@ -3,6 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 import RadhaKrishnaVaani from "../assets/images/RadhaKrishnaVaani.jpeg";
 import OptiwiseCV from "../assets/images/OptiwiseCV.jpeg";
 import Portfolio from "../assets/images/Portfolio.jpeg";
+import XyloGo from "../assets/images/XyloGo.jpeg";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -16,17 +17,20 @@ const Projects = () => {
   const optiwisecv_codelink = import.meta.env.VITE_OptiWiseCVcodeLink;
   const optiwisecv_deployedlink = import.meta.env.VITE_OptiWiseCVdeployedLink;
 
+  const xylogo_codelink = import.meta.env.VITE_XyloGocodeLink;
+  const xylogo_deployedlink = import.meta.env.VITE_XyloGodeployedLink;
+
   useEffect(() => {
     const fetchedProjects = [
       {
         id: 1,
-        title: "Umesh's Portfolio",
-        image: Portfolio,
-        codeLink: portfolio_codelink,
-        deployedLink: portfolio_deployedlink,
+        title: "XyloGo",
+        image: XyloGo,
+        codeLink: xylogo_codelink,
+        deployedLink: xylogo_deployedlink,
         description:
-          "A personal portfolio website showcasing my skills, projects, and achievements.",
-        techStack: ["React", "Node.js", "MongoDB", "Express"],
+          "XyloGo is a secure ride-sharing platform with JWT authentication, Google Maps integration for location services and fare estimation, and Socket.io for real-time ride tracking and notifications",
+        techStack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
       },
       {
         id: 2,
@@ -45,8 +49,19 @@ const Projects = () => {
         codeLink: optiwisecv_codelink,
         deployedLink: optiwisecv_deployedlink,
         description:
-          "OptiWiseCV is a web application designed to help users create and manage their professional resumes,",
+          "OptiWiseCV is a web application designed to help users create and manage their professional resumes.",
         techStack: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+      },
+
+      {
+        id: 1,
+        title: "Umesh's Portfolio",
+        image: Portfolio,
+        codeLink: portfolio_codelink,
+        deployedLink: portfolio_deployedlink,
+        description:
+          "A personal portfolio website showcasing my skills, projects, and achievements.",
+        techStack: ["React", "Node.js", "MongoDB", "Express"],
       },
     ];
 

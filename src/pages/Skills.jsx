@@ -1,21 +1,19 @@
 import {
   FaReact,
   FaNodeJs,
-  FaGitAlt,
   FaDatabase,
-  FaAndroid,
-  FaAws,
-  FaSass,
-  FaHtml5,
   FaCss3Alt,
   FaJsSquare,
-  FaJava,
   FaBootstrap,
-  FaPython,
-  FaPhp,
   FaGithub,
-  FaWordpress,
+  FaHtml5,
+  // TbBrandCpp,
+  // SiStrapi,
+  // SiCloudinary,
 } from "react-icons/fa";
+
+import { TbBrandCpp } from "react-icons/tb";
+import { SiStrapi, SiCloudinary } from "react-icons/si";
 
 const skills = [
   {
@@ -54,19 +52,15 @@ const skills = [
     bgColor: "bg-gradient-to-r from-blue-500 to-cyan-500",
   },
   {
+    name: "HTML5",
+    icon: <FaHtml5 />,
+    bgColor: "bg-gradient-to-r from-blue-500 to-cyan-500",
+  },
+
+  {
     name: "JavaScript",
     icon: <FaJsSquare />,
     bgColor: "bg-gradient-to-r from-yellow-500 to-orange-400",
-  },
-  {
-    name: "Java",
-    icon: <FaJava />,
-    bgColor: "bg-gradient-to-r from-red-600 to-purple-700",
-  },
-  {
-    name: "Python",
-    icon: <FaPython />,
-    bgColor: "bg-gradient-to-r from-green-400 to-teal-500",
   },
   {
     name: "MongoDB",
@@ -74,14 +68,9 @@ const skills = [
     bgColor: "bg-gradient-to-r from-green-600 to-blue-500",
   },
   {
-    name: "MySQL",
-    icon: <FaDatabase />,
-    bgColor: "bg-gradient-to-r from-blue-500 to-indigo-400",
-  },
-  {
     name: "GitHub",
     icon: <FaGithub />,
-    bgColor: "bg-gradient-to-r from-gray-700 to-black",
+    bgColor: "bg-gradient-to-r from-gray-400 to-black",
   },
   {
     name: "Bootstrap",
@@ -92,6 +81,21 @@ const skills = [
     name: "JQuery",
     icon: <FaReact />,
     bgColor: "bg-gradient-to-r from-indigo-500 to-purple-500",
+  },
+  {
+    name: "C++",
+    icon: <TbBrandCpp />,
+    bgColor: "bg-gradient-to-r from-indigo-500 to-purple-500",
+  },
+  {
+    name: "Strapi",
+    icon: <SiStrapi />,
+    bgColor: "bg-gradient-to-r from-yellow-500 to-orange-400",
+  },
+  {
+    name: "Cloudinary",
+    icon: <SiCloudinary />,
+    bgColor: "bg-gradient-to-r from-teal-400 to-green-500",
   },
 ];
 

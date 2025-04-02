@@ -2,7 +2,7 @@ import umesh2 from "../assets/images/umesh2.jpeg";
 
 const About = () => {
   const resume = import.meta.env.VITE_RESUME_URL;
-  const resumewithphoto = import.meta.env.VITE_RESUMEWITHPHOTO_URL;
+
 
   return (
     <section className="relative flex flex-col items-center text-center py-20 px-6 bg-gray-900 overflow-hidden">
@@ -41,7 +41,7 @@ const About = () => {
             <p className="text-lg text-gray-300 mb-2">
               <strong>Email:</strong>{" "}
               <span className="text-blue-500">
-                umeshchoudharywork@gmail.com
+                umeshchoudhary.dev@gmail.com
               </span>
             </p>
             <p className="text-lg text-gray-300 mb-4">
@@ -56,15 +56,6 @@ const About = () => {
               className="mt-6 inline-block px-6 py-3 text-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-lg transition-all"
             >
               Resume
-            </a>
-            <br />
-            <a
-              href={resumewithphoto}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-block px-6 py-3 text-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-lg transition-all"
-            >
-              Photo Resume
             </a>
           </div>
         </div>
